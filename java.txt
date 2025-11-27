@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class metots {
+    public void toplama(int sayi1, int sayi2) {
+        int sonuc = (sayi1 + sayi2);
+        System.out.println("Sayıların Toplamı: " + sonuc);
+    }
+
+    public void cikarma(int sayi1, int sayi2) {
+        int sonuc = (sayi1 - sayi2);
+        System.out.println("Sayıların Farkı: " + sonuc);
+    }
+
+    public void carpma(int sayi1, int sayi2) {
+        int sonuc = (sayi1 * sayi2);
+        System.out.println("Sayıların Çarpımı: " + sonuc);
+    }
+
+    public void bolme(int sayi1, int sayi2) {
+        if (sayi2 == 0) {
+            System.out.println("Bir sayı 0'a bölünemez.");
+        } else {
+            int sonuc = (sayi1 / sayi2);
+            System.out.println("Sayıların Bölümü: " + sonuc);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner girdi = new Scanner(System.in);
+
+        // Kullanıcıdan işlem seçmesini istiyoruz
+        System.out.print("İşlem Seçiniz (Toplama 1, Çıkarma 2, Çarpma 3, Bölme 4): ");
+        int islem = girdi.nextInt();
+
+        // Kullanıcıdan iki sayı alınacak
+        System.out.print("1. Sayıyı Giriniz: ");
+        int sayi1 = girdi.nextInt();
+
+        System.out.print("2. Sayıyı Giriniz: ");
+        int sayi2 = girdi.nextInt();
+
+        // İşlem yapacak metot
+        metots m = new metots(); // metots sınıfından bir nesne oluşturuyoruz
+
+        // Seçilen işleme göre metot çağırılıyor
+        switch (islem) {
+            case 1:
+                m.toplama(sayi1, sayi2);
+                break;
+            case 2:
+                m.cikarma(sayi1, sayi2);
+                break;
+            case 3:
+                m.carpma(sayi1, sayi2);
+                break;
+            case 4:
+                m.bolme(sayi1, sayi2);
+                break;
+            default:
+                System.out.println("Lütfen geçerli bir işlem giriniz.");
+        }
+        
+        girdi.close();
+    }
+}
