@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class deneme {
+
+    int totalPrice = 0;
+
+    public void fiyat(int urun){
+        if(urun == 1){
+            totalPrice += 79;
+        } else if(urun == 2){
+            totalPrice += 99;
+        } else if(urun == 3){
+            totalPrice += 64;
+        } else if(urun == 4){
+            totalPrice += 30;
+        } else if(urun == 5){
+            totalPrice += 10;
+        } else {
+            System.out.println("Hata: Geçerli bir ürün kodu girmediniz.");
+        }
+    }
+
+    public void kasa(int orderNo){
+        System.out.println("--- Kasaya Hoşgeldiniz ---");
+        System.out.println("Sipariş numarası: " + orderNo);
+        System.out.println("Toplam ödemeniz: " + totalPrice + " TL");
+        System.out.println("Ödeme başarıyla alınmıştır. Teşekkür ederiz!");
+    }
+
+    public static void main(String[] args){
+        Scanner veri = new Scanner(System.in);
+        deneme gonder = new deneme();
+
+        System.out.println("----- Mağazamıza hoşgeldiniz. -----");
+        System.out.println("Stoktaki ürünler menüde belirtilen ürün kodlarıyla işlenmektedir.");
+        System.out.println("1 -> Makarna");
+        System.out.println("2 -> Salça");
+        System.out.println("3 -> Peynir");
+        System.out.println("4 -> Ekmek");
+        System.out.println("5 -> Domates");
+        System.out.println("...");
+
+        System.out.print("Sipariş numarası giriniz: ");
+        int orderNo = veri.nextInt();
+
+        System.out.print("Kaç adet sipariş vermek istersiniz? -> ");
+        int orderCount = veri.nextInt();
+
+        for (int i = 1; i <= orderCount; i++){
+            System.out.print("Menüden seçtiğiniz ürünün numarasını giriniz: ");
+            int siparis = veri.nextInt();
+
+            gonder.fiyat(siparis);
+        }
+
+        gonder.kasa(orderNo);
+
+        veri.close();
+    }
+}
