@@ -16,10 +16,10 @@ Her klasör, dönem boyunca farklı derslerde yapılan uygulamaları veya projel
 
 ## 👨‍💻 Geliştirici Bilgileri
 
-**Hazırlayan:** Yağız Alp Sürmeneli
-🎓 Avrasya Üniversitesi - Bilgisayar Programcılığı
-📍 Trabzon, Türkiye
-📅 Yıl: 2025
+- **Hazırlayan:** Yağız Alp Sürmeneli
+- 🎓 Avrasya Üniversitesi - Bilgisayar Programcılığı
+- 📍 Trabzon, Türkiye
+- 📅 Yıl: 2025
 
 ---
 
