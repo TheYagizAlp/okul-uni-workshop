@@ -10,6 +10,7 @@ Her klasör, dönem boyunca farklı derslerde yapılan uygulamaları veya projel
 - **HTML5 / CSS3** – Arayüz ve tasarım.
 - **JavaScript** – Etkileşimli öğeler, zamanlayıcılar ve form kontrolleri.
 - **PHP / MySQL** – Backend ve veri yönetimi.
+- - **C#** – Windows Form Uygulamaları.
 - **Java (temel)** – Nesne tabanlı programlama alıştırmaları.
 
 ---
