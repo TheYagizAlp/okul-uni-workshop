@@ -1,0 +1,65 @@
+package javaapplication1;
+import java.util.Scanner;
+
+public class dizilerGelismis {
+    public void tersten(int dizi1[], int dizi2[], int dizi3[], int sayi){
+        
+        System.out.print("1. Dizi Elemanları Tersten: ");
+        for(int i = sayi - 1; i >= 0; i--){
+            System.out.print(" " + dizi1[i]);
+        }
+        System.out.print(" | ");
+        
+        System.out.print("2. Dizi Elemanları Tersten: ");
+        for(int i = sayi - 1; i >= 0; i--){
+            System.out.print(" " + dizi2[i]);
+        }
+        System.out.print(" | ");
+        
+        System.out.print("3. Dizi Elemanları Tersten: ");
+        for(int i = sayi - 1; i >= 0; i--){
+            System.out.print(" " + dizi3[i]);
+        }
+    }
+    
+    public static void main(String[] args) {
+        Scanner veri = new Scanner(System.in);
+        dizilerGelismis gonder = new dizilerGelismis();
+        
+        int n;
+        
+        System.out.print("Dizilerin eleman sayısını belirtin: ");
+        n = veri.nextInt();
+        
+        int[] dizi1 = new int[n];
+        int[] dizi2 = new int[n];
+        int[] dizi3 = new int[n];
+        
+        System.out.println("Lütfen 1. dizinin elemanlarını girin: ");
+        for (int i = 0; i < n; i++) {
+            if (veri.hasNextInt()) {
+                dizi1[i] = veri.nextInt();
+            }
+        }
+        
+        System.out.println("Lütfen 2. dizinin elemanlarını girin: ");
+        for (int i = 0; i < n; i++) {
+            if (veri.hasNextInt()) {
+                dizi2[i] = veri.nextInt();
+            }
+        }
+        
+        System.out.println("Lütfen 3. dizinin elemanlarını girin: ");
+        for (int i = 0; i < n; i++) {
+            if (veri.hasNextInt()) {
+                dizi3[i] = veri.nextInt();
+            }
+        }
+        
+        gonder.tersten(dizi1, dizi2, dizi3, n);
+        
+        System.out.println(" ");
+        
+        veri.close();
+    }
+}
