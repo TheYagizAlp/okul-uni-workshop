@@ -1,0 +1,100 @@
+package javaapplication1;
+import java.util.Scanner;
+
+public class dizilerGelismis {
+    public void toplama(int dizi1[], int dizi2[]){
+        int[] toplam = new int[10];
+        
+        for (int i = 0; i < 10; i++) {
+            toplam[i] = dizi1[i] + dizi2[i];
+        }
+        
+        System.out.println("Dizilerin Toplamı:");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(toplam[i]);
+        }
+    }
+    
+    public void cikarma(int dizi1[], int dizi2[]){
+        int[] fark = new int[10];
+        
+        for (int i = 0; i < 10; i++) {
+            fark[i] = dizi1[i] - dizi2[i];
+        }
+        
+        System.out.println("Dizilerin Farkı:");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(fark[i]);
+        }
+    }
+    
+    public void carpma(int dizi1[], int dizi2[]){
+        int[] carpim = new int[10];
+        
+        for (int i = 0; i < 10; i++) {
+            carpim[i] = dizi1[i] * dizi2[i];
+        }
+        
+        System.out.println("Dizilerin Çarpımı:");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(carpim[i]);
+        }
+    }
+    
+    public void bolme(int dizi1[], int dizi2[]){
+        int[] bolum = new int[10];
+        
+        for (int i = 0; i < 10; i++) {
+            bolum[i] = dizi1[i] / dizi2[i];
+        }
+        
+        System.out.println("Dizilerin Bölümü:");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(bolum[i]);
+        }
+    }
+    
+    public void ortalama(int dizi1[], int dizi2[]){
+        int[] ortalama = new int[10];
+        
+        for (int i = 0; i < 10; i++) {
+            ortalama[i] = (dizi1[i] + dizi2[i]) / 2;
+        }
+        
+        System.out.println("Dizilerin Ortalaması:");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(ortalama[i]);
+        }
+    }
+    
+    public static void main(String[] args) {
+        Scanner veri = new Scanner(System.in);
+        dizilerGelismis gonder = new dizilerGelismis();
+        
+        System.out.print("Lütfen dizilerin boyutunu girin: ");
+        int diziBoyutu = veri.nextInt();
+        
+        int[] dizi1 = new int[diziBoyutu];
+        int[] dizi2 = new int[diziBoyutu];
+        
+        System.out.println("Lütfen 1. dizinin elemanlarını girin: ");
+        for (int i = 0; i < diziBoyutu; i++) {
+            if (veri.hasNextInt()) {
+                dizi1[i] = veri.nextInt();
+            }
+        }
+        
+        System.out.println("Lütfen 2. dizinin elemanlarını girin: ");
+        for (int i = 0; i < diziBoyutu; i++) {
+            if (veri.hasNextInt()) {
+                dizi2[i] = veri.nextInt();
+            }
+        }
+        
+        gonder.toplama(dizi1, dizi2);
+        gonder.cikarma(dizi1, dizi2);
+        gonder.carpma(dizi1, dizi2);
+        gonder.bolme(dizi1, dizi2);
+        gonder.ortalama(dizi1, dizi2);
+    }
+}
