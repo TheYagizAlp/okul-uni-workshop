@@ -10,7 +10,7 @@ Her klasör, dönem boyunca farklı derslerde yapılan uygulamaları veya projel
 - **HTML5 / CSS3** – Arayüz ve tasarım.
 - **JavaScript** – Etkileşimli öğeler, zamanlayıcılar ve form kontrolleri.
 - **PHP / MySQL** – Backend ve veri yönetimi.
-- **C#** – Windows Form Uygulamaları.
+- **C#** – Windows form uygulamaları.
 - **Java (temel)** – Nesne tabanlı programlama alıştırmaları.
 
 ---
@@ -26,6 +26,6 @@ Her klasör, dönem boyunca farklı derslerde yapılan uygulamaları veya projel
 
 ## 📦 Not
 
-> Bu depo, okul süresince yapılan çalışmaların toplu halidir.  
+> Bu depo, görülen dersler süresince yapılan çalışmaların toplu halidir.  
 > Her klasör kendi başına çalışabilir örnek veya mini proje içermektedir.  
 > Diğer kapsamlı projeler ayrı repolarda tutulmuştur.
