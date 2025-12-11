@@ -19,7 +19,7 @@ Her klasör, dönem boyunca farklı derslerde yapılan uygulamaları veya projel
 - **Hazırlayan:** Yağız Alp Sürmeneli
 - 🎓 Avrasya Üniversitesi - Bilgisayar Programcılığı
 - 📍 Trabzon, Türkiye
-- 📅 Yıl: 2025
+- 📅 Yıl: 2024
 
 ---
 
