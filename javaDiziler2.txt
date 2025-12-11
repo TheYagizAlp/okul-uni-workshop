@@ -1,0 +1,50 @@
+package javaapplication1;
+import java.util.Scanner;
+
+public class dizilerGelismis {
+    public void modHesap(int dizi1[], int dizi2[]){
+        int dizi1Boyut = dizi1.length;
+        int dizi2Boyut = dizi2.length;
+        
+        int mod1 = dizi1Boyut % 2;
+        int mod2 = dizi2Boyut % 2;
+        
+        if(mod1 == 0){
+            System.out.print("1. Dizinin elaman sayısı çifttir.");
+        } else if (mod2 == 0){
+            System.out.print("2. Dizinin elaman sayısı çifttir.");
+        }
+    }
+    
+    public static void main(String[] args) {
+        Scanner veri = new Scanner(System.in);
+        dizilerGelismis gonder = new dizilerGelismis();
+        
+        System.out.print("Lütfen 1. dizinin boyutunu girin: ");
+        int diziBoyutu1 = veri.nextInt();
+        
+        System.out.print("Lütfen 2. dizinin boyutunu girin: ");
+        int diziBoyutu2 = veri.nextInt();
+        
+        int[] dizi1 = new int[diziBoyutu1];
+        int[] dizi2 = new int[diziBoyutu2];
+        
+        System.out.println("Lütfen 1. dizinin elemanlarını girin: ");
+        for (int i = 0; i < diziBoyutu1; i++) {
+            if (veri.hasNextInt()) {
+                dizi1[i] = veri.nextInt();
+            }
+        }
+        
+        System.out.println("Lütfen 2. dizinin elemanlarını girin: ");
+        for (int i = 0; i < diziBoyutu2; i++) {
+            if (veri.hasNextInt()) {
+                dizi2[i] = veri.nextInt();
+            }
+        }
+        
+        gonder.modHesap(dizi1, dizi2);
+        
+        veri.close();
+    }
+}
